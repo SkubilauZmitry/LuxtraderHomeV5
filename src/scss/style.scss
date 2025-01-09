@@ -229,24 +229,30 @@ body {
 	}
 }
 
+// .lots__slide {
+// 	margin: 0px -50px;
+// }
+
 .lots {
 	&__box {
 	}
 
 	&__box-row {
-		display: flex;
-		margin: 0px -50px;
+		// display: flex;
+		// margin: 0px -50px;
 	}
 
 	&__colomn {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		flex: 0 1 33.333%;
 		padding: 0px 50px;
+		position: relative;
 	}
 
 	&__colomn-image {
-		position: relative;
+		position: absolute;
 	}
 
 	&__colomn-rhombus {
@@ -281,8 +287,8 @@ body {
 	}
 
 	&__colomn-text {
-		position: relative;
-		margin: 30px 0px 30px 0px;
+		position: absolute;
+		top: 280px;
 		font-size: 21px;
 		font-family: "PFDinTextCondPro";
 		color: rgb(0, 0, 0);
@@ -290,11 +296,13 @@ body {
 		line-height: 1.19;
 		text-align: center;
 		z-index: 175;
-		flex: 1 1 100%;
+		max-width: 280px;
 	}
 
 	&__colomn-box {
 		display: flex;
+		position: absolute;
+		top: 355px;
 	}
 
 	&__colomn-box-left {
@@ -350,7 +358,7 @@ body {
 		position: absolute;
 		top: 44%;
 		width: 100%;
-		font-size: 22px;
+		font-size: 20px;
 		color: rgb(28, 36, 42);
 		line-height: 0.42;
 		text-align: center;
@@ -408,6 +416,120 @@ body {
 	}
 
 	&__box-button {
+		position: absolute;
+		top: 480px;
 		margin: 25px auto 50px auto;
 	}
+}
+.swiper-button__box-lots {
+	display: flex;
+	margin: 580px auto 0px auto;
+	position: relative;
+}
+.swiper-button-next_lots {
+	margin: 0px 0px 0px -15px;
+	padding: 0px 0px 0px 0px;
+	font-size: 12px;
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 1.19;
+	text-align: center;
+}
+.swiper-button-prev_lots {
+	margin: 0px -15px 0px 0px;
+	font-size: 12px;
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 1.19;
+	text-align: center;
+	text-align: left;
+}
+.swiper-image-lots img {
+	max-width: 90%;
+	display: block;
+	margin: 0px auto;
+}
+@media (min-width: $mobile) {
+	.lots__slider-mobile {
+		display: none;
+	}
+}
+@media (max-width: $mobile) {
+	.lots__slider-mobile {
+		display: block;
+	}
+	.lots__colomn-box-center-text-one {
+		width: 100%;
+		font-size: 13px;
+		margin: 10px 0px 0px 0px;
+	}
+	.lots__box-button {
+		top: 450px;
+	}
+	.btn {
+		&_black {
+			font-size: 12px;
+			padding: 5px 10px 5px 10px;
+			border: 1px solid #bb9c66;
+		}
+	}
+	.swiper-button__box-lots {
+		margin: 510px auto 0px auto;
+	}
+	.swiper-button-next_lots {
+		margin: 0px 0px 0px 0px;
+		font-size: 12px;
+		font-weight: 500;
+	}
+	.swiper-button-prev_lots {
+		margin: 0px 0px 0px 0px;
+		font-size: 12px;
+		font-weight: 500;
+	}
+	.lots__colomn-box-center-text-one {
+		font-size: 12px;
+	}
+
+	.lots__colomn-box-center-text-two {
+		font-size: 18px;
+	}
+
+	.lots__colomn-box-center-text-three {
+		font-size: 12px;
+		margin: 0px 0px 5px 0px;
+	}
+	.lots__colomn-text {
+		top: 280px;
+		font-size: 18px;
+	}
+	.lots__colomn-box {
+		display: flex;
+		position: absolute;
+		top: 345px;
+	}
+	.lots__colomn-rhombus-time {
+		position: absolute;
+		top: 35px;
+		font-size: 15px;
+		font-family: "PTSans";
+		color: rgb(0, 0, 0);
+		line-height: 1.167;
+		z-index: 170;
+	}
+}
+@media (min-width: $mobile) {
+	.lots__slider {
+		display: block;
+	}
+}
+@media (max-width: $mobile) {
+	.lots__slider {
+		display: none;
+	}
+}
+.lots__all {
+	display: block;
+	width: 100%;
+	height: 800px;
+	background-color: #28bde3;
 }
