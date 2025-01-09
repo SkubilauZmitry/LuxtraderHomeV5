@@ -527,9 +527,44 @@ body {
 		display: none;
 	}
 }
-.lots__all {
-	display: block;
-	width: 100%;
-	height: 800px;
-	background-color: #28bde3;
+
+.lots {
+	&__all {
+		display: flex;
+		display: none;
+		flex-wrap: wrap;
+		width: 100%;
+		height: 1200px;
+		@media (max-width: 1097px) {
+			height: 1850px;
+		}
+		@media (max-width: 800px) {
+			height: 2400px;
+		}
+	}
+
+	&__colomn {
+		&_all {
+			flex: 0 1 20%;
+			margin: 50px 0px 0px 0px;
+			@media (max-width: 1315px) {
+				flex: 0 1 25%;
+			}
+			@media (max-width: 1097px) {
+				flex: 0 1 33.333%;
+			}
+			@media (max-width: 800px) {
+				flex: 0 1 50%;
+			}
+		}
+	}
+}
+.lots__all-button {
+	display: flex;
+	& img {
+		margin: 50px auto 0px auto;
+	}
+}
+.active-all {
+	display: flex;
 }
