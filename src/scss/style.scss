@@ -229,19 +229,7 @@ body {
 	}
 }
 
-// .lots__slide {
-// 	margin: 0px -50px;
-// }
-
 .lots {
-	&__box {
-	}
-
-	&__box-row {
-		// display: flex;
-		// margin: 0px -50px;
-	}
-
 	&__colomn {
 		display: flex;
 		flex-direction: column;
@@ -253,6 +241,11 @@ body {
 
 	&__colomn-image {
 		position: absolute;
+		& img {
+			max-width: 90%;
+			display: block;
+			margin: 0px auto;
+		}
 	}
 
 	&__colomn-rhombus {
@@ -272,13 +265,13 @@ body {
 
 	&__colomn-rhombus-clock {
 		position: absolute;
-		top: 17px;
+		top: 15px;
 		z-index: 167;
 	}
 
 	&__colomn-rhombus-time {
 		position: absolute;
-		top: 35px;
+		top: 32px;
 		font-size: 18px;
 		font-family: "PTSans";
 		color: rgb(0, 0, 0);
@@ -288,7 +281,7 @@ body {
 
 	&__colomn-text {
 		position: absolute;
-		top: 280px;
+		top: 270px;
 		font-size: 21px;
 		font-family: "PFDinTextCondPro";
 		color: rgb(0, 0, 0);
@@ -412,20 +405,19 @@ body {
 		font-weight: 900;
 	}
 
-	&__colomn-box-right-img-line {
-	}
-
 	&__box-button {
 		position: absolute;
 		top: 480px;
 		margin: 25px auto 50px auto;
 	}
 }
+
 .swiper-button__box-lots {
 	display: flex;
 	margin: 580px auto 0px auto;
 	position: relative;
 }
+
 .swiper-button-next_lots {
 	margin: 0px 0px 0px -15px;
 	padding: 0px 0px 0px 0px;
@@ -435,6 +427,7 @@ body {
 	line-height: 1.19;
 	text-align: center;
 }
+
 .swiper-button-prev_lots {
 	margin: 0px -15px 0px 0px;
 	font-size: 12px;
@@ -444,20 +437,14 @@ body {
 	text-align: center;
 	text-align: left;
 }
+
 .swiper-image-lots img {
 	max-width: 90%;
 	display: block;
 	margin: 0px auto;
 }
-@media (min-width: $mobile) {
-	.lots__slider-mobile {
-		display: none;
-	}
-}
+
 @media (max-width: $mobile) {
-	.lots__slider-mobile {
-		display: block;
-	}
 	.lots__colomn-box-center-text-one {
 		width: 100%;
 		font-size: 13px;
@@ -517,14 +504,11 @@ body {
 		z-index: 170;
 	}
 }
-@media (min-width: $mobile) {
-	.lots__slider {
-		display: block;
-	}
-}
-@media (max-width: $mobile) {
-	.lots__slider {
-		display: none;
+@media (max-width: 557px) {
+	.swiper-button__box-lots {
+		opacity: 0;
+		visibility: hidden;
+		max-width: 15%;
 	}
 }
 
@@ -560,11 +544,15 @@ body {
 	}
 }
 .lots__all-button {
-	display: flex;
+	display: none;
 	& img {
-		margin: 50px auto 0px auto;
+		margin: 30px auto 0px auto;
+		max-width: 45%;
 	}
 }
 .active-all {
+	display: flex;
+}
+.active-button {
 	display: flex;
 }

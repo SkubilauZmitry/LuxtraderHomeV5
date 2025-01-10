@@ -151,6 +151,7 @@
 //Burger Icon
 .icon-menu {
 	display: none;
+
 	@media (max-width: $mobile) {
 		display: block;
 		position: relative;
@@ -196,5 +197,10 @@
 				transform: rotate(45deg);
 			}
 		}
+	}
+	&_body {
+		margin: 0px auto;
+		z-index: 1100;
+		top: -40px;
 	}
 }

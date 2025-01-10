@@ -21,25 +21,17 @@ document.addEventListener("keyup", function (event) {
 });
 
 const lotsAll = document.querySelector(".lots__all");
-const lotsAllButton = document.querySelector(".lots__all-button-img");
+const lotsAllButtonImg = document.querySelector(".lots__all-button-img");
+const lotsAllButton = document.querySelector(".lots__all-button");
 const lotsBoxButton = document.querySelector(".swiper-image-img");
-lotsAllButton.addEventListener("click", function (event) {
+lotsAllButtonImg.addEventListener("click", function (event) {
     lotsAll.classList.toggle("active-all");
+    lotsAllButton.classList.toggle("active-button");
     console.log('dima');
 });
 lotsBoxButton.addEventListener("click", function (event) {
     lotsAll.classList.toggle("active-all");
+    lotsAllButton.classList.toggle("active-button");
+
     console.log('dima');
 });
-// document.addEventListener("click", function (event) {
-//     if (!event.target.closest('.menu-user')) {
-//         menuUserList.classList.remove("active");
-//     }
-// });
-// document.addEventListener("keyup", function (event) {
-//     if (event.code === "Escape") {
-//         menuUserList.classList.remove("active");
-//     };
-// });
-
-
