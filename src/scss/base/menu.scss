@@ -1,7 +1,7 @@
 .menu {
 	// .menu__icon
-	&__icon {
-	}
+	// &__icon {
+	// }
 	// .menu__body
 	&__body {
 		@media (max-width: $mobile) {
@@ -37,8 +37,7 @@
 		}
 	}
 	// .menu__item
-	&__item {
-	}
+
 	// .menu__link
 	&__link {
 		@media (max-width: $mobile) {
@@ -82,9 +81,9 @@
 			span {
 				width: 0;
 			}
-			&::before,
-			&::after {
-			}
+			// &::before,
+			// &::after {
+			// }
 			&::before {
 				top: calc(50% - toRem(1));
 				transform: rotate(-45deg);
@@ -98,8 +97,8 @@
 }
 .menu {
 	// .menu__icon
-	&__icon {
-	}
+	// &__icon {
+	// }
 	// .menu__body
 	&__body {
 		@media (max-width: $mobile) {
