@@ -1,3 +1,103 @@
 //====================================================================================================
+.footer {
+    background: #1c242a;
+    padding: 50px 0px 50px 0px;
+    &__container {
+    }
+
+    &__row {
+        display: flex;
+        @media (max-width: 1120px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__logo-box {
+        flex: 0 0 250px;
+        @media (max-width: 1120px) {
+            display: flex;
+            flex: 0 0 100%;
+            justify-content: center;
+        }
+    }
+
+    &__logo {
+        margin: 0px 0px 30px 0px;
+    }
+
+    &__text-info {
+        font-size: 14px;
+        font-family: "PTSans";
+        color: rgb(187, 156, 102);
+        line-height: 1.5;
+        & span {
+            @media (max-width: 1120px) {
+                display: flex;
+                max-width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        font-family: "PFDinTextCondPro";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.786;
+        padding: 0px 15px 0px 15px;
+        display: flex;
+        justify-content: center;
+        flex: 1 1 100%;
+        @media (max-width: 1120px) {
+            text-align: center;
+            margin: 0px 0px 30px 0px;
+            padding: 0px 30px 0px 30px;
+        }
+    }
+
+    &__container-box-number {
+        flex: 0 0 250px;
+    }
+
+    &__number {
+        font-size: 25px;
+        font-family: "BravoRG";
+        color: rgb(187, 156, 102);
+        margin: 0px 0px 20px 0px;
+        text-transform: uppercase;
+        line-height: 1;
+        text-align: center;
+
+        & span {
+            font-size: 14px;
+            position: relative;
+            top: -5px;
+            left: 0;
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        font-family: "PTSans";
+        color: rgb(187, 156, 102);
+        line-height: 1.5;
+        position: relative;
+        padding: 0px 0px 0px 10px;
+        display: flex;
+        justify-content: center;
+        margin: 0px auto;
+        text-decoration: underline;
+        &::before {
+            content: "";
+            background: url("@img/footer/Shape 10.jpg") 0 0 no-repeat;
+            position: absolute;
+            top: 5px;
+            left: 53px;
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
 
 //====================================================================================================

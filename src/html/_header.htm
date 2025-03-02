@@ -1,97 +1,112 @@
 <header class="header" id="header">
-  <div class="header__container container">
-    <div class="header__menu-before"></div>
-    <div class="header__logo">
-      <img src="@img/header/logo1.png" alt="Image" class="header__logo-img" />
-    </div>
-    <div class="header__menu menu" data-da=".header__menu-before">
-      <button type="button" class="menu__icon icon-menu">
-        <span></span>
-      </button>
-      <nav class="menu__body">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="#header" class="menu__link">Главная </a>
-          </li>
-          <li class="menu__item">
-            <a href="#lots" class="menu__link">Аукцион </a>
-          </li>
-          <li class="menu__item">
-            <a
-              href="https://chromewebstore.google.com/detail/google-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%87%D0%B8%D0%BA/aapbdbdomjkkjkaonfhkkikfgjllcleb"
-              class="menu__link"
-            >
-              О проекте</a
-            >
-          </li>
-          <li class="menu__item">
-            <a
-              href="https://chromewebstore.google.com/detail/google-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%87%D0%B8%D0%BA/aapbdbdomjkkjkaonfhkkikfgjllcleb"
-              class="menu__link"
-            >
-              Партнерам</a
-            >
-          </li>
-          <li class="menu__item">
-            <a
-              href="https://chromewebstore.google.com/detail/google-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%87%D0%B8%D0%BA/aapbdbdomjkkjkaonfhkkikfgjllcleb"
-              class="menu__link menu__link_5--"
-            >
-              Контакты
-            </a>
-          </li>
-        </ul>
-        <button type="button" class="menu__icon icon-menu icon-menu_body">
+  <div class="header__content">
+    <div class="header__container">
+      <div class="header__menu-before"></div>
+      <div class="header__logo">
+        <img src="@img/header/logo1.png" alt="Image" class="header__logo-img" />
+      </div>
+      <div class="header__menu menu" data-da=".header__menu-before">
+        <button type="button" class="menu__icon icon-menu">
           <span></span>
         </button>
-      </nav>
-    </div>
-    <div class="header__nav">
-      <div class="header__choice">
-        <div class="header__choice-image">
-          <img
-            src="@img/header/globe.png"
-            alt="Image"
-            class="header__choice-img"
-          />
-          <div class="header__choice-text">
-            <a
-              href="https://chromewebstore.google.com/detail/google-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%87%D0%B8%D0%BA/aapbdbdomjkkjkaonfhkkikfgjllcleb"
-              >Выбор Региона</a
-            >
+        <nav class="menu__body">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#header" class="menu__link" data-goto=".header"
+                >Главная
+              </a>
+            </li>
+            <li class="menu__item">
+              <a
+                href="#lots"
+                class="menu__link"
+                data-goto-top="35"
+                data-goto=".lots"
+                >Аукцион
+              </a>
+            </li>
+            <li class="menu__item">
+              <a
+                href="#categories"
+                class="menu__link"
+                data-goto-top="85"
+                data-goto=".categories"
+              >
+                О проекте</a
+              >
+            </li>
+            <li class="menu__item">
+              <a
+                href="#bottom"
+                class="menu__link"
+                data-goto-top="100"
+                data-goto=".bottom"
+              >
+                Партнерам</a
+              >
+            </li>
+            <li class="menu__item">
+              <a
+                href="footer"
+                data-goto=".footer"
+                class="menu__link menu__link_5--"
+              >
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="menu__icon icon-menu icon-menu_body">
+            <span></span>
+          </button>
+        </nav>
+      </div>
+      <div class="header__nav">
+        <div class="header__choice">
+          <div class="header__choice-image">
+            <img
+              src="@img/header/globe.png"
+              alt="Image"
+              class="header__choice-img"
+            />
+            <div class="header__choice-text">
+              <a
+                href="https://chromewebstore.google.com/detail/google-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%87%D0%B8%D0%BA/aapbdbdomjkkjkaonfhkkikfgjllcleb"
+                >Выбор Региона</a
+              >
+            </div>
           </div>
-        </div>
-        <div class="header__user-menu menu-user">
-          <div class="menu-user__img">
-            <img src="@img/header/userMenu.png" alt="Image" />
-          </div>
-          <div class="menu-user__block-list">
-            <ul class="menu-user__list">
-              <li class="menu-user__link menu-user__link_1--">
-                <a
-                  href="https://chromewebstore.google.com/detail/google-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%87%D0%B8%D0%BA/aapbdbdomjkkjkaonfhkkikfgjllcleb"
-                  >Выбор региона
-                </a>
-              </li>
-              <li class="menu-user__link menu-user__link_2--">
-                <a
-                  href="https://chromewebstore.google.com/detail/google-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%87%D0%B8%D0%BA/aapbdbdomjkkjkaonfhkkikfgjllcleb"
-                  >Личный кабинет</a
-                >
-              </li>
-              <li class="menu-user__link menu-user__link_3--">
-                <a
-                  href="https://chromewebstore.google.com/detail/google-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%87%D0%B8%D0%BA/aapbdbdomjkkjkaonfhkkikfgjllcleb"
-                  >Мои ставки</a
-                >
-              </li>
-              <li class="menu-user__link menu-user__link_4--">
-                <a
-                  href="https://chromewebstore.google.com/detail/google-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%87%D0%B8%D0%BA/aapbdbdomjkkjkaonfhkkikfgjllcleb"
-                  >Мои лоты</a
-                >
-              </li>
-            </ul>
+          <div class="header__user-menu menu-user">
+            <div class="menu-user__img">
+              <img src="@img/header/userMenu.png" alt="Image" />
+            </div>
+            <div class="menu-user__block-list">
+              <ul class="menu-user__list">
+                <li class="menu-user__link menu-user__link_1--">
+                  <a
+                    href="https://chromewebstore.google.com/detail/google-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%87%D0%B8%D0%BA/aapbdbdomjkkjkaonfhkkikfgjllcleb"
+                    >Выбор региона
+                  </a>
+                </li>
+                <li class="menu-user__link menu-user__link_2--">
+                  <a
+                    href="https://chromewebstore.google.com/detail/google-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%87%D0%B8%D0%BA/aapbdbdomjkkjkaonfhkkikfgjllcleb"
+                    >Личный кабинет</a
+                  >
+                </li>
+                <li class="menu-user__link menu-user__link_3--">
+                  <a
+                    href="https://chromewebstore.google.com/detail/google-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%87%D0%B8%D0%BA/aapbdbdomjkkjkaonfhkkikfgjllcleb"
+                    >Мои ставки</a
+                  >
+                </li>
+                <li class="menu-user__link menu-user__link_4--">
+                  <a
+                    href="https://chromewebstore.google.com/detail/google-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%87%D0%B8%D0%BA/aapbdbdomjkkjkaonfhkkikfgjllcleb"
+                    >Мои лоты</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -174,7 +189,7 @@
       <button type="button" class="swiper-button-prev">
         <img src="@img/header/arrow2.png" alt="Image" />
       </button>
-      <div class="swiper-image">
+      <div class="swiper-image-header">
         <img src="@img/header/Ellipse.png" alt="Image" />
       </div>
 
